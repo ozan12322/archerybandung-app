@@ -16,7 +16,7 @@
         <meta charset="utf-8">
 
         <!-- Site Title -->
-        <title>Quick</title>
+        <title>One Group</title>
 
 
         <!-- Favicon -->
