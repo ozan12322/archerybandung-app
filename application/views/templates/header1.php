@@ -1,48 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Author Meta -->
+        <meta name="author" content="Themefisher">
+        <!-- Meta Description -->
+        <meta name="description" content="">
+        <!-- Meta Keyword -->
+        <meta name="keywords" content="">
+        <!-- meta character set -->
+        <meta charset="utf-8">
 
-<head>
+        <!-- Site Title -->
+        <title>Quick</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
 
-  <title>One Group</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/icons/">
 
-  <!-- Bootstrap core CSS -->
-  <link href="<?= base_url() ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:200,300,400,700,900,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:200,300,400,900,700,500,300' rel='stylesheet' type='text/css'>
 
-  <!-- Custom styles for this template -->
-  <link href="<?= base_url() ?>assets/css/shop-homepage.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <i class="fab fa-strava"></i>
-      <a class="navbar-brand" href="<?= base_url()?>home">One Group</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+        
+        <!--
+        CSS
+        ============================================= -->
+        <link rel="stylesheet" href="<?= base_url() ?>assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/css/justifiedGallery.min.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/css/et-font.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/css/animate.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/css/owl.theme.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/css/main.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->        
+    </head>
