@@ -108,7 +108,7 @@
                             </div>
                             <h4 class="heading">Archery War</h4>
                             <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac. <br>
-                            <a href="" class="btn btn-primary">Ke Archery War</a>
+                            <a href="<?= base_url() ?>archery_war/" class="btn btn-primary">Ke Archery War</a>
                             </p>
                             
                         </div>

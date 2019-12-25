@@ -41,6 +41,15 @@
           <span>Invoices</span></a>
       </li>
 
+       <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <li class="nav-item">
+        <a class="nav-link" href="<?= base_url() ?>">
+          <i class="fas fa-home"></i>
+          <span>Kembali ke Home</span></a>
+      </li>
+
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 

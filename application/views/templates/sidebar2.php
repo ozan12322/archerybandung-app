@@ -42,7 +42,7 @@
 
       <li class="nav-item">
         <a class="nav-link" href="tables.html">
-          <i class="fal fa-bullseye"></i>
+          <i class="fas fa-bullseye"></i>
           <span>Anak Panah</span></a>
       </li>
 
@@ -50,6 +50,15 @@
         <a class="nav-link" href="tables.html">
           <i class="fas fa-angle-double-down"></i>
           <span>Asesoris</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <li class="nav-item">
+        <a class="nav-link" href="<?= base_url() ?>">
+          <i class="fas fa-home"></i>
+          <span>Kembali ke Home</span></a>
       </li>
 
       <!-- Divider -->
