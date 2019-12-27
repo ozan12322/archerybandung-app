@@ -1,7 +1,7 @@
 <?php 
 
 	class Product extends CI_Controller {
-		public function index(){
+		public function index($id){
 			$data['barang'] = $this->Model_barang->tampil_data()->result();
 
 			$this->load->view('templates/header_toko');

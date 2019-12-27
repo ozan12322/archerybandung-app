@@ -121,7 +121,7 @@
                             </div>
                             <h4 class="heading">Toko</h4>
                             <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac. <br>
-                            <a href="<?= base_url() ?>dashboard/" class="btn btn-primary">Ke Toko</a>
+                            <a href="<?= base_url() ?>toko/" class="btn btn-primary">Ke Toko</a>
                             </p>
                         </div>
                     </div>

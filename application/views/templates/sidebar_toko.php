@@ -15,9 +15,8 @@
               <nav class="main_nav">
                 <ul>
                   <li class="hassubs active">
-                    <a href="<?= base_url() ?>">Home</a>
+                    <a href="">Home</a>
                     <ul>
-                      <li><a href="categories.php">Categories</a></li>
                       <li><a href="product.php">Product</a></li>
                       <li><a href="cart.php">Cart</a></li>
                       <li><a href="checkout.php">Check out</a></li>
@@ -33,6 +32,7 @@
                   </li>
                   <li><a href="#">Accessories</a></li>
                   <li><a href="">Contact</a></li>
+                  
                 </ul>
               </nav>
               <div class="header_extra ml-auto">
@@ -95,15 +95,6 @@
       </div>
     </div>
 
-    <!-- Social -->
-    <div class="header_social">
-      <ul>
-        <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-      </ul>
-    </div>
   </header>
 
   <!-- Menu -->
@@ -119,9 +110,8 @@
         </div>
         <ul class="page_menu_nav menu_mm">
           <li class="page_menu_item has-children menu_mm">
-            <a href="index.php">Home<i class="fa fa-angle-down"></i></a>
+            <a href="">Home<i class="fa fa-angle-down"></i></a>
             <ul class="page_menu_selection menu_mm">
-              <li class="page_menu_item menu_mm"><a href="categories.php">Categories<i class="fa fa-angle-down"></i></a></li>
               <li class="page_menu_item menu_mm"><a href="product.php">Product<i class="fa fa-angle-down"></i></a></li>
               <li class="page_menu_item menu_mm"><a href="cart.php">Cart<i class="fa fa-angle-down"></i></a></li>
               <li class="page_menu_item menu_mm"><a href="checkout.php">Checkout<i class="fa fa-angle-down"></i></a></li>
@@ -143,12 +133,4 @@
 
     <div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
 
-    <div class="menu_social">
-      <ul>
-        <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-      </ul>
-    </div>
   </div>

@@ -92,7 +92,7 @@
 							<div class="product_image"><img src="<?= base_url().'/uploads/'.$brg->gambar ?>"></div>
 							<div class="product_extra product_new"><a href="">New</a></div>
 							<div class="product_content">
-								<div class="product_title"><a href="product.php"><?= $brg->nama_brg ?></a></div>
+								<div class="product_title"><a href="<?= base_url(); ?>toko/product/<?= $brg->id ?>"><?= $brg->nama_brg ?></a></div>
 								<div class="pruduct-desc"><small><?= $brg->keterangan ?></small></div>
 								<div class="product_price">Rp.<?= $brg->harga ?></div>
 							</div>
