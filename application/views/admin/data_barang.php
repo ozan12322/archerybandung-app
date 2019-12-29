@@ -26,9 +26,9 @@
 			<th><?= $brg->kategori ?></th>
 			<th><?= $brg->harga ?></th>
 			<th><?= $brg->stok ?></th>
-			<td><div class="btn btn-success btn-sm"><i class="fas fa-search-plus"></i></div></td>
-			<td><div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div></td>
-			<td><div class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></div></td>
+			<td><?= anchor('admin/data_barang/detail/' . $brg->id_brg, '<div class="btn btn-success btn-sm"><i class="fas fa-search-plus"></i></div>') ?></td>
+			<td><?= anchor('admin/data_barang/edit/' . $brg->id_brg, '<div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div>') ?></td>
+			<td><a href="<?= base_url(); ?>admin/data_barang/hapus/<?= $brg->id_brg ?>" class="btn btn-danger btn-sm" onclick="return confirm('apakah anda yakin ingin menghapus data ini ?')"><i class="fas fa-trash"></i></a></td>
 		</tr>
 
 		<?php endforeach; ?>

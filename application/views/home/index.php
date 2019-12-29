@@ -55,14 +55,14 @@
                     <div class="container">
                         <p>Selamat datang di</p>
                         <br>
-                        <h1>ONE GROUP</h1>
-                        <p>Archery</p>
+                        <h1>ONE Group</h1>
                         <p>Game | Sport | Shop</p>
                     </div>
                 </div>
             </div>
         </div>
-        
+
+
         <!-- about -->
         <div id="about" class="about">
             <div class="container">
@@ -171,49 +171,21 @@
                         <h2>Contact</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium nam ab dolor, <br> dignissimos dicta pariatur impedit earum enim quidem laborum.</p>
                     </div>
-                    <div class="col-xs-12 col-sm-8 col-md-8">
-                        <!-- <div class="exp-block">
-                            <h3>Leave a message</h3>
-                            <form action="#" class="contact-form clearfix">
-                                <div class="input-field">
-                                    <input type="text" name="name" placeholder="Name*" class="form-control">
-                                </div>
-                                <div class="input-field">
-                                    <input type="email" name="email" placeholder="Email*" class="form-control">
-                                </div>
-                                <div class="input-field">
-                                    <textarea name="message" placeholder="Message*" class="form-control"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-theme-color pull-right">Send Message</button>
-                            </form>
-                        </div> -->
-                        <div  class="contact-form">
-                            <input type="text" name="name" id="name" placeholder="Name">
-                            <input type="email" name="email" id="email" placeholder="Email">
-                            <input type="text" name="web" id="web" placeholder="Web">
-
-                            <textarea name="message" id="message" cols="30" rows="10" class="input-message" placeholder="Comment"></textarea>
-
-                            <button type="submit"  class="btn btn-theme-color">SEND</button>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="container-fluid text-center">
                         <div class="contact-info">
                             <h4>CONTACT INFO</h4>
-                            <p>Explain to you how all this mistaken idea of denouncing a teachings of the great explorer of the truth</p>
+                            <p>Whatsapp     : ...</p>
+                            <p>Email        : ...</p>
+                            <p>Instagram    : ...</p>
                         </div>
                         <div class="contact-address">
                             <h4>Address</h4>
                             <ul>
-                                <li class="address">Road 35/4,<br>
-                                Themefisher,Dhaka<br>Bangladesh</li>
-
-                                <li class="phone">[ +00 ] 012 000 088</li>
-                                <li class="email">support@themefisher.com</li>
+                                <li class="address">Jalan Raya Banjaran,<br>
+                                Langonsari,Pameungpeuk<br>Bandung</li>
                             </ul>
-
                         </div>
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>
