@@ -57,7 +57,12 @@
                         <input type="text" class="form-control" id="keterangan" name="keterangan" placeholder="Keterangan">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="kategori" name="kategori" placeholder="Kategori">
+                        <select type="text" class="form-control" id="kategori" name="kategori" placeholder="Kategori">
+                            <option value="">Category</option>
+                            <option value="Busur">Busur</option>
+                            <option value="Panah">Panas</option>
+                            <option value="Acc">Asesoris</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control" id="harga" name="harga" placeholder="Harga">

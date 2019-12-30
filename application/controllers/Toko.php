@@ -48,4 +48,17 @@
 			$this->load->view('templates/footer_checkout');
 		}
 
+		public function proses_checkout(){
+			$is_processed = $this->Model_invoice->index();
+			if($is_processed){
+			$this->cart->destroy();
+			$this->load->view('templates/header_checkout');
+			$this->load->view('templates/sidebar_toko');
+			$this->load->view('toko/proses_checkout');
+			$this->load->view('templates/footer_checkout');
+			}else{
+				echo "Maaf, Pesanan Anda Gagal diproses!";
+			}
+		}
+
 	}

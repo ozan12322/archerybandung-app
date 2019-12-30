@@ -15,18 +15,18 @@
               <nav class="main_nav">
                 <ul>
                   <li class="active">
-                    <a href="">Home</a>
+                    <a href="<?= base_url() ?>toko">Home</a>
                   </li>
                   <li class="hassubs">
-                    <a href="categories.php">Categories</a>
+                    <a href="">Categories</a>
                     <ul>
-                      <li><a href="categories.php">Busur</a></li>
-                      <li><a href="categories.php">Panah</a></li>
+                      <li><a href="">Busur</a></li>
+                      <li><a href="">Panah</a></li>
                       <li><a href="">Accessories</a></li>
                     </ul>
                   </li>
-                  <li><a href="">Contact</a></li>
-                  <li><a href="">Login</a></li>
+                  <li><a href="<?= base_url('Toko/') ?>contact">Contact</a></li>
+                  <li><a href="<?= base_url('Auth/') ?>">Login</a></li>
                   
                 </ul>
               </nav>
