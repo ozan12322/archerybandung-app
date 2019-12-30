@@ -14,30 +14,25 @@
               <div class="logo"><a href="#">One Archery Shop.</a></div>
               <nav class="main_nav">
                 <ul>
-                  <li class="hassubs active">
+                  <li class="active">
                     <a href="">Home</a>
-                    <ul>
-                      <li><a href="product.php">Product</a></li>
-                      <li><a href="cart.php">Cart</a></li>
-                      <li><a href="checkout.php">Check out</a></li>
-                      <li><a href="contact.php">Contact</a></li>
-                    </ul>
                   </li>
                   <li class="hassubs">
                     <a href="categories.php">Categories</a>
                     <ul>
                       <li><a href="categories.php">Busur</a></li>
                       <li><a href="categories.php">Panah</a></li>
+                      <li><a href="">Accessories</a></li>
                     </ul>
                   </li>
-                  <li><a href="#">Accessories</a></li>
                   <li><a href="">Contact</a></li>
+                  <li><a href="">Login</a></li>
                   
                 </ul>
               </nav>
               <div class="header_extra ml-auto">
                 <div class="shopping_cart">
-                  <a href="cart.php">
+                  <a data-toggle="modal" data-target="#modalCart">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;" xml:space="preserve">
                       <g>
@@ -48,7 +43,8 @@
                           c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z"/>
                       </g>
                     </svg>
-                    <div>Cart <span>(0)</span></div>
+                    <div>Cart <span>(<?= $keranjang = $this->cart->total_items()
+                     ?>)</span></div>
                   </a>
                 </div>
                 <div class="search">
@@ -99,7 +95,7 @@
 
   <!-- Menu -->
 
-  <div class="menu menu_mm trans_300">
+  <!-- <div class="menu menu_mm trans_300">
     <div class="menu_container menu_mm">
       <div class="page_menu_content">
               
@@ -133,4 +129,61 @@
 
     <div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
 
+  </div> -->
+
+
+
+<!-- Modal: modalCart -->
+<div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!-- Header -->
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Your cart</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body">
+        
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Product Name</th>
+              <th>Qty</th>
+              <th>Price</th>
+              <th>Sub-Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php $no=1; ?>
+            <?php foreach($this->cart->contents() as $i) : ?>
+            <tr>
+              <td scope="row"><?= $no++; ?></td>
+              <td><?= $i['name'] ?></td>
+              <td align="center"><?= $i['qty'] ?></td>
+              <td align="right">Rp.<?= number_format($i['price'], 0,',','.') ?></td>
+              <td align="right">Rp.<?= number_format($i['subtotal'], 0,',','.') ?></td>
+            </tr>
+
+            <?php endforeach; ?>
+            <tr>
+              <td colspan="4"></td>
+              <td align="right">RP.<?=  number_format($this->cart->total() ,0,",",".") ?></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Close</button>
+        <a href="<?= base_url('Toko/') ?>hapus_cart" class="btn btn-danger btn-sm">Clear Cart</a>
+        <a class="btn btn-success btn-sm" href="<?= base_url('Toko/') ;?>check_out">Check Out</a>
+      </div>
+    </div>
   </div>
+</div>
+<!-- Modal: modalCart -->

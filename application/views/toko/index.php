@@ -113,11 +113,11 @@
 						    <!-- Keterangan -->
 						    <p class="card-text"><?= $brg->keterangan ?></p><p></p>
 						    <!-- Harga -->
-						    <h4>Rp. <?= $brg->harga ?>,00</h4>
+						    <h4>Rp.<?= number_format($brg->harga, 0,',','.'), ',' ?>00</h4>
 						    <!-- Button -->
 						    <div class="text-center">
 						    <button href="" class="btn btn-primary" data-toggle="modal" data-target="#detail_barang">Detail</button>
-						    <a href="" class="btn btn-success" title="Add to Cart">Add to Cart</a>
+						    <?= anchor('Toko/tambah_ke_keranjang/' . $brg->id_brg, '<div class="btn btn-success" title="Add to Cart">Add to Cart</div>') ?>
 						    </div>
 						  </div>
 

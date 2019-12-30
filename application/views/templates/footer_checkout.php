@@ -34,11 +34,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="<?= base_url() ?>assets/plugins/scrollmagic/ScrollMagic.min.js"></script>
 <script src="<?= base_url() ?>assets/plugins/greensock/animation.gsap.min.js"></script>
 <script src="<?= base_url() ?>assets/plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="<?= base_url() ?>assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="<?= base_url() ?>assets/plugins/Isotope/isotope.pkgd.min.js"></script>
 <script src="<?= base_url() ?>assets/plugins/easing/easing.js"></script>
 <script src="<?= base_url() ?>assets/plugins/parallax-js-master/parallax.min.js"></script>
-<script src="<?= base_url() ?>assets/js/custom.js"></script>
-
+<script src="<?= base_url() ?>assets/js/checkout.js"></script>
 </body>
 </html>

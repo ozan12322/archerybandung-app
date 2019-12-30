@@ -20,15 +20,32 @@
 			$this->load->view('templates/footer_toko');
 
 		}
-		public function product($id)
+		public function tambah_ke_keranjang($id)
 		{
-			$data['judul'] = 'Detail Product';
-			$data['barang'] = $this->Model_barang->getProductById($id);
+			$barang = $this->Model_barang->find($id);
 
-			$this->load->view('templates/header_toko', $data);
+			$data = array(
+				'id' => $barang->id_brg,
+				'qty' => 1,
+				'price' => $barang->harga,
+				'name' => $barang->nama_brg
+			);
+
+			$this->cart->insert($data);
+			redirect('toko');
+		}
+
+		public function hapus_cart(){
+			$this->cart->destroy();
+			redirect('toko/index');
+		}
+
+		public function check_out(){
+
+			$this->load->view('templates/header_checkout');
 			$this->load->view('templates/sidebar_toko');
-			$this->load->view('toko/product', $data);
-			$this->load->view('templates/footer_toko');
+			$this->load->view('toko/checkout');
+			$this->load->view('templates/footer_checkout');
 		}
 
 	}
