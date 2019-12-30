@@ -88,34 +88,43 @@
 
 	<div class="products">
 		<div class="container">
-
+			<hr>
 			<h1 class="text-center">List Product</h1>
 			<hr>
+      		<div class="row">
+			<?php foreach($barang as $brg) : ?>
+				<div class="col-md-4">
+						<!-- Card -->
+						<div class="card">
 
-			<div class="row">
-				<div class="col">
-					
-					<div class="product_grid">
+						  <!-- Card image -->
+						  <div class="view overlay">
+						    <img class="card-img-top" src="<?= base_url().'/uploads/'.$brg->gambar ?>" alt="Card image cap">
+						    <a href="#!">
+						      <div class="mask rgba-white-slight"></div>
+						    </a>
+						  </div>
 
-						<?php foreach($barang as $brg) : ?>
+						  <!-- Card content -->
+						  <div class="card-body">
 
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="<?= base_url().'/uploads/'.$brg->gambar ?>"></div>
-							<div class="product_extra product_new"><a href="">New</a></div>
-							<div class="product_content">
-								<div class="product_title"><a href=""><?= $brg->nama_brg ?></a></div>
-								<div class="pruduct-desc"><small><?= $brg->keterangan ?></small></div>
-								<div class="product_price">Rp.<?= $brg->harga ?></div>
-							</br>
-								<div class="product_detail"><a href="">Detail</a></div>
-							</div>
+						    <!-- Nama Barang -->
+						    <h2 class="card-title"><a href="#!"><?= $brg->nama_brg ?></a></h2>
+						    <!-- Keterangan -->
+						    <p class="card-text"><?= $brg->keterangan ?></p><p></p>
+						    <!-- Harga -->
+						    <h4>Rp. <?= $brg->harga ?>,00</h4>
+						    <!-- Button -->
+						    <div class="text-center">
+						    <button href="" class="btn btn-primary" data-toggle="modal" data-target="#detail_barang">Detail</button>
+						    <a href="" class="btn btn-success" title="Add to Cart">Add to Cart</a>
+						    </div>
+						  </div>
+
 						</div>
-
-						<?php endforeach; ?>						
-
-					</div>
-						
+				</div>
+			<?php endforeach; ?>
+			</div>		
 				</div>
 			</div>
 		</div>
@@ -166,3 +175,24 @@
 
 	</div>
 
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="detail_barang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Product</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
