@@ -40,9 +40,9 @@
                 <nav class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav main-manu">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Kategori</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#process">Kategori</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav><!-- /.navbar-collapse -->
             </div>

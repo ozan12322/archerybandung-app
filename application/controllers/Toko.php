@@ -20,6 +20,16 @@
 			$this->load->view('templates/footer_toko');
 
 		}
+
+		public function detail($id_brg)
+		{
+			$data['barang'] = $this->Model_barang->detail_brg($id_brg);
+			$this->load->view('templates/header_detail');
+			$this->load->view('templates/sidebar_toko');
+			$this->load->view('toko/detail_brg', $data);
+			$this->load->view('templates/footer_detail');
+		}
+
 		public function tambah_ke_keranjang($id)
 		{
 			$barang = $this->Model_barang->find($id);

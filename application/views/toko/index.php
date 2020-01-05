@@ -17,7 +17,7 @@
 									<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
 										<div class="home_slider_title">A new Online Shop experience.</div>
 										<div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</div>
-										<div class="button button_light home_button"><a href="#">Shop Now</a></div>
+										<div class="button button_light home_button"><a href="#products">Shop Now</a></div>
 									</div>
 								</div>
 							</div>
@@ -35,7 +35,7 @@
 									<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
 										<div class="home_slider_title">A new Online Shop experience.</div>
 										<div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</div>
-										<div class="button button_light home_button"><a href="#">Shop Now</a></div>
+										<div class="button button_light home_button"><a href="#products">Shop Now</a></div>
 									</div>
 								</div>
 							</div>
@@ -53,7 +53,7 @@
 									<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
 										<div class="home_slider_title">A new Online Shop experience.</div>
 										<div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</div>
-										<div class="button button_light home_button"><a href="#">Shop Now</a></div>
+										<div class="button button_light home_button"><a href="products">Shop Now</a></div>
 									</div>
 								</div>
 							</div>
@@ -111,12 +111,13 @@
 						    <!-- Nama Barang -->
 						    <h2 class="card-title"><a href="#!"><?= $brg->nama_brg ?></a></h2>
 						    <!-- Keterangan -->
-						    <p class="card-text"><?= $brg->keterangan ?></p><p></p>
+						    <p class="card-text"><h6>Kategori : <a href=""><?= $brg->kategori ?></a></h6></p><p></p>
 						    <!-- Harga -->
 						    <h4>Rp.<?= number_format($brg->harga, 0,',','.'), ',' ?>00</h4>
 						    <!-- Button -->
 						    <div class="text-center">
-						    <button href="" class="btn btn-primary" data-toggle="modal" data-target="#detail_barang">Detail</button>
+						    <?= anchor('Toko/detail/' . $brg->id_brg, '<div class="btn btn-primary" title="Detail Product">Detail</div>') ?>
+						    
 						    <?= anchor('Toko/tambah_ke_keranjang/' . $brg->id_brg, '<div class="btn btn-success" title="Add to Cart">Add to Cart</div>') ?>
 						    </div>
 						  </div>
@@ -175,24 +176,3 @@
 
 	</div>
 
-
-
-
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="detail_barang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Detail Product</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      
-      </div>
-    </div>
-  </div>
-</div>

@@ -42,4 +42,22 @@
 			}
 		}
 
+		public function ambil_id_invoice($id){
+			$result = $this->db->where('id', $id)->limit(1)->get('tb_invoice');
+			if ($result->num_rows() > 0) {
+				return $result->row();
+			}else{
+				return false;
+			}
+		}
+
+		public function ambil_id_pesanan($id){
+			$result = $this->db->where('id_invoice', $id)->get('tb_pesanan');
+			if ($result->num_rows() > 0) {
+				return $result->result();
+			}else{
+				return false;
+			}
+		}
+
 }

@@ -26,6 +26,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</footer>
 </div>
 
+
 <script src="<?= base_url() ?>assets/js/jquery-3.2.1.min.js"></script>
 <script src="<?= base_url() ?>assets/styles/bootstrap4/popper.js"></script>
 <script src="<?= base_url() ?>assets/styles/bootstrap4/bootstrap.min.js"></script>
@@ -38,7 +39,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="<?= base_url() ?>assets/plugins/Isotope/isotope.pkgd.min.js"></script>
 <script src="<?= base_url() ?>assets/plugins/easing/easing.js"></script>
 <script src="<?= base_url() ?>assets/plugins/parallax-js-master/parallax.min.js"></script>
-<script src="<?= base_url() ?>assets/js/custom.js"></script>
-
+<script src="<?= base_url() ?>assets/js/product.js"></script>
 </body>
 </html>
