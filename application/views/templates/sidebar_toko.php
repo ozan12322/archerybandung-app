@@ -20,12 +20,12 @@
                   <li class="hassubs">
                     <a href="">Categories</a>
                     <ul>
-                      <li><a href="">Busur</a></li>
-                      <li><a href="">Panah</a></li>
-                      <li><a href="">Accessories</a></li>
+                      <li><a href="<?= base_url('Kategori/busur') ?>">Busur</a></li>
+                      <li><a href="<?= base_url('Kategori/panah') ?>">Panah</a></li>
+                      <li><a href="<?= base_url('Kategori/asesoris') ?>">Accessories</a></li>
                     </ul>
                   </li>
-                  <li><a href="<?= base_url('Toko/') ?>contact">Contact</a></li>
+                  <li><a href="<?= base_url('Contact/index') ?>">Contact</a></li>
                   <li><a href="<?= base_url('Auth/') ?>">Login</a></li>
                   
                 </ul>

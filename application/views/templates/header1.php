@@ -29,6 +29,7 @@
         <!--
         CSS
         ============================================= -->
+        <link href="<?= base_url() ?>assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="<?= base_url() ?>assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?= base_url() ?>assets/css/owl.carousel.css">

@@ -109,9 +109,9 @@
 						  <div class="card-body">
 
 						    <!-- Nama Barang -->
-						    <h2 class="card-title"><a href="#!"><?= $brg->nama_brg ?></a></h2>
+						    <h2 class="card-title"><?= $brg->nama_brg ?></h2>
 						    <!-- Keterangan -->
-						    <p class="card-text"><h6>Kategori : <a href=""><?= $brg->kategori ?></a></h6></p><p></p>
+						    <p class="card-text"><h6><?= $brg->keterangan ?></h6></p><p></p>
 						    <!-- Harga -->
 						    <h4>Rp.<?= number_format($brg->harga, 0,',','.'), ',' ?>00</h4>
 						    <!-- Button -->

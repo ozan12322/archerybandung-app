@@ -174,9 +174,10 @@
                         <div class="container-fluid text-center">
                         <div class="contact-info">
                             <h4>CONTACT INFO</h4>
-                            <p>Whatsapp     : ...</p>
-                            <p>Email        : ...</p>
-                            <p>Instagram    : ...</p>
+                            <p><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp</a></p>
+                            <p><a href=""><i class="fa icon-googleplus" aria-hidden="true"></i> Email</a></p>
+                            <p><a href=""><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></p>
+                            <p><a href=""><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></p>
                         </div>
                         <div class="contact-address">
                             <h4>Address</h4>
