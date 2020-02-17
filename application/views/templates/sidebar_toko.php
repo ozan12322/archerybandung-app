@@ -26,7 +26,7 @@
                     </ul>
                   </li>
                   <li><a href="<?= base_url('Contact/index') ?>">Contact</a></li>
-                  <li><a href="<?= base_url('Auth/') ?>">Login</a></li>
+                  <li><a href="<?= base_url('user') ?>">My Profile</a></li>
                   
                 </ul>
               </nav>

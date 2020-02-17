@@ -7,13 +7,17 @@
 			$alamat = $this->input->post('address');
 			$no_telp = $this->input->post('no_telp');
 			$email = $this->input->post('email');
+			$bank = $this->input->post('bank');
+			$pengiriman = $this->input->post('pengiriman');
 
 			$invoice = array(
 				'nama' => $nama,
 				'alamat' => $alamat,
 				'no_telp' => $no_telp,
 				'email' => $email,
-				'tgl_pesan' => date('Y-m-d H:i:s'),
+				'bank' => $bank,
+				'pengiriman' => $pengiriman,
+ 				'tgl_pesan' => date('Y-m-d H:i:s'),
 				'batas_bayar' => date('Y-m-d H:i:s', mktime(date('H'),date('i'),date('s'), date('m'), date('d') + 1, date('Y'))),
 			);
 

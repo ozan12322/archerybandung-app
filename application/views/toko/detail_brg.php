@@ -37,6 +37,13 @@
 							<?= anchor('Toko/tambah_ke_keranjang/' . $brg->id_brg, '<div class="btn btn-success" title="Add to Cart">Add to Cart</div>') ?>
 						</div>
 
+						<div class="product_quantity_container">
+							Atau bisa juga lewat :
+							<a href="">Shopee</a>
+							<a href="">Bukalapak</a>
+							<a href="">Tokopedia</a>
+						</div>
+
 						<!-- Share -->
 						<div class="details_share">
 							<span>Share:</span>

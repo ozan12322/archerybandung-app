@@ -3,7 +3,7 @@
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="">Archery War</a>
+      <a class="navbar-brand" href="">Archery Fun</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -70,7 +70,7 @@
   <!-- Page Content -->
   <div class="container">
 
-    <h1 class="my-4">Welcome to Archery War</h1>
+    <h1 class="my-4">Welcome to Archery Fun</h1>
 
     <!-- Marketing Icons Section -->
     <div class="row">
@@ -186,8 +186,8 @@
     <!-- Features Section -->
     <div class="row">
       <div class="col-lg-6">
-        <h2>Archery War Features</h2>
-        <p>The Archery War includes :</p>
+        <h2>Archery Fun Features</h2>
+        <p>The Archery Fun includes :</p>
         <ul>
           <li>
             <strong>...</strong>

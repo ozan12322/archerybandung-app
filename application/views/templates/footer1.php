@@ -4,28 +4,23 @@
                     <a class="facebook" href="">
                         <i class="icon-facebook"></i> 
                     </a>
-                   
-                    <a class="twitter" href="">
-                        <i class="icon-twitter"></i> 
-                    </a>
-                 
-                    <a class="dribbble" href="">
-                        <i class="icon-dribbble"></i> 
-                    </a>
-                
-                    <a class="linkedin" href="">
-                        <i class="icon-linkedin"></i> 
-                    </a>
-                
+
                     <a class="googleplus" href="">
                         <i class="icon-googleplus"></i>
                     </a>
+
+                    <a href="">
+                        <i class="fa fa-instagram"></i>
+                    </a>
                     
+                    <a href="">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
                     
                 </div> 
 
                 <div class="copyright">
-                    <p>Copyright All Rights Reserved.</p>
+                    <p>Copyright All Rights Reserved. | by <a href="">One Group</a></p>
                 </div>
             </div>
         </footer>

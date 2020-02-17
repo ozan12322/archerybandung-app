@@ -25,7 +25,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="<?= base_url(); ?>assets/img/logo.png" alt="">
+                        <h2>ONE GROUP</h2>
                     </a>
                 </div>
                 
@@ -53,9 +53,10 @@
             <div class="banner-content dtable fullscreen">
                 <div class="content-inner dtablecell">
                     <div class="container">
-                        <p>Selamat datang di</p>
+                        <p>Welcome to</p>
                         <br>
                         <h1>ONE Group</h1>
+                        <p>Archery</p>
                         <p>Game | Sport | Shop</p>
                     </div>
                 </div>
@@ -91,12 +92,14 @@
         </div>
         <!-- // about -->
 
+        <hr>
+
         <!-- process -->
         <div id="process" class="process section">
             <div class="container">
                 <div class="row">
                     <div class="title">
-                        <h2>Kategori</h2>
+                        <h2>Categories</h2>
                         <p>...</p>
                     </div>
                     
@@ -106,9 +109,9 @@
                                 <i class="icon-mobile"></i>
 
                             </div>
-                            <h4 class="heading">Archery War</h4>
+                            <h4 class="heading">Archery Fun</h4>
                             <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac. <br>
-                            <a href="<?= base_url() ?>archery_war/" class="btn btn-primary">Ke Archery War</a>
+                            <a href="<?= base_url() ?>archery_war/" class="btn btn-primary">Archery Fun</a>
                             </p>
                             
                         </div>
@@ -119,9 +122,9 @@
                             <div class="icon-holder">
                                 <i class="icon-mobile"></i>
                             </div>
-                            <h4 class="heading">Toko</h4>
+                            <h4 class="heading">One Archery</h4>
                             <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac. <br>
-                            <a href="<?= base_url() ?>toko/" class="btn btn-primary">Ke Toko</a>
+                            <a href="<?= base_url() ?>auth/" class="btn btn-primary">One Archery</a>
                             </p>
                         </div>
                     </div>
@@ -131,37 +134,7 @@
         </div>
         <!-- // process -->
 
-        <!-- testimonial -->
-        <div id="testimonial" class="testimonial">
-            <div class="dark-overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="title fadeInDown">
-                        <h2>Bala bala Gehu</h2>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 ">
-                        <!-- Set up your HTML -->
-                        <div class="testimonial-slider">
-                          <div>
-                                <p>
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo consequat.
-                                </p>
-                                <span>Adward Smith</span>
-                          </div>
-                          <div>
-                                <p>
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo consequat.
-                                </p>
-                                <span>Adward Smith</span>
-                          </div>
-                        </div>
-
-                            
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- // testimonial -->
+        <hr>
 
         <!-- contact -->
         <div id="contact" class="contact section">

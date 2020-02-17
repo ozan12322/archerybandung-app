@@ -48,8 +48,18 @@
 								</div>
 								<div>
 									<!-- Email -->
+									<label for="checkout_payment">Payment*</label>
+									<select name="bank" id="checkout_payment" class="checkout_input" required="required">
+										<option>-</option>
+										<option>BCA - XXXX</option>
+										<option>BNI -XXXXXX</option>
+										<option>BRI- XXXXXXXXXX</option>
+									</select>
+								</div>
+								<div>
+									<!-- Email -->
 									<label for="checkout_shiping">Shiping*</label>
-									<select name="shiping" id="checkout_shiping" class="checkout_input" required="required">
+									<select name="pengiriman" id="checkout_shiping" class="checkout_input" required="required">
 											<option>-</option>
 											<option>JNE</option>
 											<option>TIKI</option>
@@ -58,16 +68,7 @@
 											<option>GRAB</option>
 									</select>
 								</div>
-								<div>
-									<!-- Email -->
-									<label for="checkout_payment">Payment*</label>
-									<select name="payment" id="checkout_payment" class="checkout_input" required="required">
-										<option>-</option>
-										<option>BCA - XXXX</option>
-										<option>BNI -XXXXXX</option>
-										<option>BRI- XXXXXXXXXX</option>
-									</select>
-								</div>
+								
 							<br>
 							<center><button type="submit" class="btn btn-primary" title="Order Now">Order</button></center>
 							</form>
@@ -138,7 +139,7 @@
 									</div>
 								</li>
 								<li class="d-flex flex-row align-items-center justify-content-start">
-									<div class="order_list_title">Total</div>
+									<div class="order_list_title">Harga tersebut belum termasuk Ongkos Kirim!</div>
 									<div class="order_list_value ml-auto">
 										
 									</div>
