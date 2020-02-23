@@ -42,7 +42,7 @@
 					<hr>
 					<div class="text-center p-t-1">
 						<h6>
-							<a class="txt2" href="<?= base_url('auth/'); ?>forget_password">
+							<a class="txt2" href="<?= base_url('auth/'); ?>forgetPassword">
 							Forgot Password?
 							</a>
 						</h6>

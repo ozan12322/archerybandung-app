@@ -52,11 +52,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		}
 
 		public function check_out(){
+			if ($this->session->userdata('email')) {
+             if ($this->form_validation->run() == FALSE)
+                {
+                  $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+                  $this->load->view('templates/header_checkout');
+					$this->load->view('templates/sidebar_toko', $data);
+					$this->load->view('toko/checkout', $data);
+					$this->load->view('templates/footer_checkout');
+                }
+                else
+                {
+                 $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+                 $is_processed = $this->Model_invoice->index();
+                 if ($is_processed) {
+                  $this->cart->destroy();
+                  $this->load->view('templates/header_checkout');
+					$this->load->view('templates/sidebar_toko', $data);
+					$this->load->view('toko/checkout', $data);
+					$this->load->view('templates/footer_checkout');
+                  
+                   }else {
+                  echo "Maat pesananan anda gagal diproses";
+                  }
+                }
+             
+        } else {
+            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">please, login before you pay your produk !</div>');
+              redirect('auth');
+        }
 
-			$this->load->view('templates/header_checkout');
-			$this->load->view('templates/sidebar_toko');
-			$this->load->view('toko/checkout');
-			$this->load->view('templates/footer_checkout');
 		}
 
 		public function proses_checkout(){

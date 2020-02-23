@@ -39,12 +39,12 @@
 								<div>
 									<!-- Phone no -->
 									<label for="checkout_phone">Phone no*</label>
-									<input type="phone" name="no_telp" id="checkout_phone" class="checkout_input" required="required">
+									<input type="text" name="no_telp" id="checkout_phone" class="checkout_input" required="required">
 								</div>
 								<div>
 									<!-- Email -->
 									<label for="checkout_email">Email Address*</label>
-									<input type="email" name="email" id="checkout_email" class="checkout_input" required="required">
+									<input type="email" name="email" id="checkout_email" class="checkout_input" required="required" value="<?= $user['email']; ?>" readonly>
 								</div>
 								<div>
 									<!-- Email -->
