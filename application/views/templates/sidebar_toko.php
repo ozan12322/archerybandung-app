@@ -26,7 +26,13 @@
                     </ul>
                   </li>
                   <li><a href="<?= base_url('Contact/index') ?>">Contact</a></li>
-                  <li><a href="<?= base_url('user') ?>">My Profile</a></li>
+                  <li class="hassubs">
+                    <a href="">My Profile</a>
+                    <ul>
+                      <li><a href="<?= base_url('user') ?>">My Profile</a></li>
+                      <li><a href="<?= base_url('auth/logout') ?>">Logout</a></li>
+                    </ul>
+                  </li>
                   
                 </ul>
               </nav>
