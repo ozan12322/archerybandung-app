@@ -39,10 +39,11 @@
 
                 <nav class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav main-manu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#process">Kategori</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#" class="page-scroll">Home</a></li>
+                        <li><a href="#about" class="page-scroll">About</a></li>
+                        <li><a href="#process" class="page-scroll">Kategori</a></li>
+                        <li><a href="#team" class="page-scroll">Team</a></li>
+                        <li><a href="#contact" class="page-scroll">Contact</a></li>
                     </ul>
                 </nav><!-- /.navbar-collapse -->
             </div>
@@ -136,6 +137,99 @@
 
         <hr>
 
+        <div id="team" class="team">
+               <!-- tEAM -->    
+    <div class="container">
+
+        <div class="title">
+        <h2>Our amazing team</h2>
+        </div>
+
+      <!--Section: Content-->
+      <section class="team-section text-center dark-grey-text">
+
+        <!-- Section heading -->
+        <!-- Grid row -->
+        <div class="row text-center">
+
+          <!-- Grid column -->
+          <div class="col-md-4 mb-4">
+            <div class="avatar mx-auto">
+              <img src="<?= base_url(); ?>/assets/img/team2.jpg" class="img-circle" alt="Sample avatar">
+            </div><br>
+            <h4 class="font-weight-bold dark-grey-text my-4">Maria Kate</h4>
+            <h6 class="text-uppercase grey-text mb-3"><strong>Photographer</strong></h6>
+            <!-- Facebook-->
+            <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-fb">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <!--Dribbble -->
+            <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-dribbble">
+              <i class="fab fa-instagram"></i>
+            </a>
+             <!--Email-->
+            <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 mb-4">
+            <div class="avatar mx-auto">
+              <img src="<?= base_url(); ?>/assets/img/team1.jpg" class="img-circle" alt="Sample avatar">
+            </div><br>
+            <h4 class="font-weight-bold dark-grey-text my-4">John Doe</h4>
+            <h6 class="text-uppercase grey-text mb-3"><strong>Front-end Developer</strong></h6>
+            <!--Email-->
+            <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <!-- Facebook-->
+            <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-fb">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <!-- GitHub-->
+            <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-git">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 mb-4">
+            <div class="avatar mx-auto">
+              <img src="<?= base_url(); ?>/assets/img/team4.jpg" class="img-circle" alt="Sample avatar">
+            </div><br>
+            <h4 class="font-weight-bold dark-grey-text my-4">Sarah Melyah</h4>
+            <h6 class="text-uppercase grey-text mb-3"><strong>Web Developer</strong></h6>
+            <!-- Facebook-->
+            <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-fb">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <!--Dribbble -->
+            <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-dribbble">
+              <i class="fab fa-instagram"></i>
+            </a>
+             <!--Email-->
+            <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+      </section>
+      <!--Section: Content-->
+
+
+    </div>
+        </div>
+
+        <hr>
+
         <!-- contact -->
         <div id="contact" class="contact section">
             <div class="container">
@@ -155,8 +249,11 @@
                         <div class="contact-address">
                             <h4>Address</h4>
                             <ul>
-                                <li class="address">Jalan Raya Banjaran,<br>
-                                Langonsari,Pameungpeuk<br>Bandung</li>
+                                <li class="address">
+                                Jalan Raya Banjaran,<br>
+                                Langonsari, Pameungpeuk, Bandung<br>
+                                Indonesia
+                                </li>
                             </ul>
                         </div>
                         </div>

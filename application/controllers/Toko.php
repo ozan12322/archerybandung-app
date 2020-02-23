@@ -72,4 +72,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			}
 		}
 
+		public function cari()
+		{
+			$data['judul'] = 'One Archery Shop';
+			$data['barang'] = $this->Model_barang->cariDataProduk();
+			$this->load->view('templates/header_toko', $data);
+			$this->load->view('templates/sidebar_toko');
+			$this->load->view('toko/index', $data);
+			$this->load->view('templates/footer_toko');
+			
+		}
+
 	}

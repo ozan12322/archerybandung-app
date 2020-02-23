@@ -82,8 +82,9 @@
         <div class="row">
           <div class="col">
             <div class="search_panel_content d-flex flex-row align-items-center justify-content-end">
-              <form action="#">
-                <input type="text" class="search_input" placeholder="Search" required="required">
+              <form action="#" method="post">
+                <input type="text" class="search_input" placeholder="Search" required="required" name="keyword" id="keyword"><!-- 
+                <button class="btn btn-primary" type="submit" id="cariDataProduk">Search</button> -->
               </form>
             </div>
           </div>

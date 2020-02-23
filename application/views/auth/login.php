@@ -5,7 +5,7 @@
 				<form class="login100-form validate-form" method="post" action="<?= base_url('auth'); ?>">
 					<a href="<?= base_url() ?>home">
 						<span class="login100-form-title p-b-10">
-							<img src="" width=80>
+							<img src="<?= base_url(); ?>assets/img/b.jpg" width=80>
 						</span>
 					</a>
 					<span class="login100-form-title p-b-30 text-color">

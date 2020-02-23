@@ -18,6 +18,24 @@
         <!-- Site Title -->
         <title>One Group</title>
 
+        <style type="text/css">
+            .team {
+                background: #F7F7F7;
+                padding-top: 100px;
+            }
+            .team img {
+                width: 300px;
+                height: 275px;
+                border: 3px solid #333;
+            }
+
+            /*pindahkan scrollnya*/
+            $('body').animate({
+                scrollTop: elementujuan.offset().top - 50
+            }, 1000);
+
+    e.preventDefault();
+        </style>
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="img/icons/">
@@ -29,6 +47,12 @@
         <!--
         CSS
         ============================================= -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Material Design Bootstrap -->
+        <link rel="stylesheet" href="<?= base_url() ?>assets/css/mdb.min.css">
         <link href="<?= base_url() ?>assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="<?= base_url() ?>assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.min.css">

@@ -44,4 +44,11 @@
 			}
 		}
 
+		public function cariDataProduk(){
+			$keyword = $this->input->post('keyword', true);
+			$this->db->like('nama_brg', $keyword);
+			$this->db->or_like('kategori', $keyword);
+			return $this->db->get('tb_barang')->result_array();
+		}
+
 	}

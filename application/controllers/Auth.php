@@ -93,9 +93,10 @@ class Auth extends CI_Controller {
     }
 
     public function forget_password(){
-            $this->load->view('templates/auth_header');
-            $this->load->view('auth/forget_password');
-            $this->load->view('templates/auth_footer');
+        $data['title'] = 'Forget Password';
+        $this->load->view('templates/auth_header', $data);
+        $this->load->view('auth/forget_password');
+        $this->load->view('templates/auth_footer');
     }
 
     public function logout()
