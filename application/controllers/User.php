@@ -47,7 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                 $config['allowed_types'] = 'gif|jpg|png';
                 $config['max_size']     = '2048';
-                $config['upload_path'] = './assets/images/profile/';
+                $config['upload_path'] = './assets/img/profile/';
 
                 $this->load->library('upload', $config);
 

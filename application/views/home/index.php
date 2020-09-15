@@ -25,7 +25,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <h2>ONE GROUP</h2>
+                        <h2>DisiniAja</h2>
                     </a>
                 </div>
                 
@@ -56,9 +56,9 @@
                     <div class="container">
                         <p>Welcome to</p>
                         <br>
-                        <h1>ONE Group</h1>
-                        <p>Archery</p>
-                        <p>Game | Sport | Shop</p>
+                        <h1>Disini Aja</h1>
+                        <p>Satu tempat berjuta manfaat.</p>
+                        <p>Shop | Education | Social</p>
                     </div>
                 </div>
             </div>
@@ -108,11 +108,10 @@
                         <div class="process-inner">
                             <div class="icon-holder">
                                 <i class="icon-mobile"></i>
-
                             </div>
-                            <h4 class="heading">Archery Fun</h4>
+                            <h4 class="heading">Education</h4>
                             <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac. <br>
-                            <a href="<?= base_url() ?>archery_war/" class="btn btn-primary">Archery Fun</a>
+                            <a href="#" class="btn btn-primary">Education</a>
                             </p>
                             
                         </div>
@@ -125,11 +124,46 @@
                             </div>
                             <h4 class="heading">One Archery</h4>
                             <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac. <br>
-                            <a href="<?= base_url() ?>auth/" class="btn btn-primary">One Archery</a>
+                            <a href="<?= base_url() ?>toko/" class="btn btn-primary">One Archery</a>
                             </p>
                         </div>
                     </div>
-                    
+                    <div class="proecess-block col-xs-12 col-sm-4 col-md-4">
+                        <div class="process-inner">
+                            <div class="icon-holder">
+                                <i class="icon-mobile"></i>
+                            </div>
+                            <h4 class="heading">Fashion</h4>
+                            <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac. <br>
+                            <a href="#" class="btn btn-primary">Fashion</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="proecess-block col-xs-12 col-sm-4 col-md-4">
+                        <div class="process-inner">
+                            <div class="icon-holder">
+                                <i class="icon-mobile"></i>
+                            </div>
+                            <h4 class="heading">One Archery</h4>
+                            <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac. <br>
+                            <a href="#" class="btn btn-primary">One Archery</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="proecess-block col-xs-12 col-sm-4 col-md-4">
+                        <div class="process-inner">
+                            <div class="icon-holder">
+                                <i class="icon-mobile"></i>
+                            </div>
+                            <h4 class="heading">One Archery</h4>
+                            <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac. <br>
+                            <a href="#" class="btn btn-primary">One Archery</a>
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -161,15 +195,15 @@
             <h6 class="text-uppercase grey-text mb-3"><strong>Photographer</strong></h6>
             <!-- Facebook-->
             <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-fb">
-              <i class="fab fa-facebook-f"></i>
+              <i class="fa fa-facebook-f"></i>
             </a>
             <!--Dribbble -->
             <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-dribbble">
-              <i class="fab fa-instagram"></i>
+              <i class="fa fa-instagram"></i>
             </a>
              <!--Email-->
             <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-email">
-              <i class="fas fa-envelope"></i>
+              <i class="fa icon-googleplus"></i>
             </a>
           </div>
           <!-- Grid column -->
@@ -182,16 +216,17 @@
             <h4 class="font-weight-bold dark-grey-text my-4">John Doe</h4>
             <h6 class="text-uppercase grey-text mb-3"><strong>Front-end Developer</strong></h6>
             <!--Email-->
-            <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-email">
-              <i class="fas fa-envelope"></i>
-            </a>
-            <!-- Facebook-->
             <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-fb">
-              <i class="fab fa-facebook-f"></i>
+              <i class="fa fa-facebook-f"></i>
             </a>
-            <!-- GitHub-->
-            <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-git">
-              <i class="fab fa-github"></i>
+            <!--Dribbble -->
+            <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-dribbble">
+              <i class="fa fa-instagram"></i>
+            </a>
+             <!--Email-->
+            <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-email">
+              <i class="fa icon-googleplus"></i>
+            </a>
             </a>
           </div>
           <!-- Grid column -->
@@ -205,15 +240,16 @@
             <h6 class="text-uppercase grey-text mb-3"><strong>Web Developer</strong></h6>
             <!-- Facebook-->
             <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-fb">
-              <i class="fab fa-facebook-f"></i>
+              <i class="fa fa-facebook-f"></i>
             </a>
             <!--Dribbble -->
             <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-dribbble">
-              <i class="fab fa-instagram"></i>
+              <i class="fa fa-instagram"></i>
             </a>
              <!--Email-->
             <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-email">
-              <i class="fas fa-envelope"></i>
+              <i class="fa icon-googleplus"></i>
+            </a>
             </a>
           </div>
           <!-- Grid column -->

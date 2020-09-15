@@ -16,7 +16,7 @@
         <meta charset="utf-8">
 
         <!-- Site Title -->
-        <title>One Group</title>
+        <title>DisiniAja</title>
 
         <style type="text/css">
             .team {
@@ -24,21 +24,13 @@
                 padding-top: 100px;
             }
             .team img {
-                width: 300px;
-                height: 275px;
+                width: 290px;
+                height: 270px;
                 border: 3px solid #333;
             }
 
-            /*pindahkan scrollnya*/
-            $('body').animate({
-                scrollTop: elementujuan.offset().top - 50
-            }, 1000);
-
-    e.preventDefault();
+            
         </style>
-
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="img/icons/">
 
         <link href='https://fonts.googleapis.com/css?family=Raleway:200,300,400,700,900,800' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Roboto:200,300,400,900,700,500,300' rel='stylesheet' type='text/css'>
@@ -52,17 +44,17 @@
         <!-- Google Fonts Roboto -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
         <!-- Material Design Bootstrap -->
-        <link rel="stylesheet" href="<?= base_url() ?>assets/css/mdb.min.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/home/css/mdb.min.css">
         <link href="<?= base_url() ?>assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="<?= base_url() ?>assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="<?= base_url() ?>assets/css/owl.carousel.css">
-        <link rel="stylesheet" href="<?= base_url() ?>assets/css/justifiedGallery.min.css">
-        <link rel="stylesheet" href="<?= base_url() ?>assets/css/et-font.css">
-        <link rel="stylesheet" href="<?= base_url() ?>assets/css/animate.css">
-        <link rel="stylesheet" href="<?= base_url() ?>assets/css/owl.carousel.css">
-        <link rel="stylesheet" href="<?= base_url() ?>assets/css/owl.theme.css">
-        <link rel="stylesheet" href="<?= base_url() ?>assets/css/main.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/home/css/font-awesome.min.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/home/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/home/css/owl.carousel.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/home/css/justifiedGallery.min.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/home/css/et-font.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/home/css/animate.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/home/css/owl.carousel.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/home/css/owl.theme.css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/home/css/main.css">
         
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
