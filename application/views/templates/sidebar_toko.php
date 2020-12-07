@@ -11,7 +11,7 @@
         <div class="row">
           <div class="col">
             <div class="header_content d-flex flex-row align-items-center justify-content-start">
-              <div class="logo"><a href="#">One Archery Shop.</a></div>
+              <div class="logo"><a href="<?= base_url() ?>toko">Archery Bandung.</a></div>
               <nav class="main_nav">
                 <ul>
                   <li class="active">
@@ -26,14 +26,31 @@
                     </ul>
                   </li>
                   <li><a href="<?= base_url('Contact/index') ?>">Contact</a></li>
+                  <?php if($this->session->userdata('role_id')  == 2) { ?>
                   <li class="hassubs">
-                    <a href="">My Profile</a>
+                    <a href="<?= base_url('user') ?>">My Profile</a>
                     <ul>
                       <li><a href="<?= base_url('user') ?>">My Profile</a></li>
                       <li><a href="<?= base_url('auth/logout') ?>">Logout</a></li>
                     </ul>
                   </li>
-                  
+                  <?php }elseif ($this->session->userdata('role_id')  == 1) { ?>
+                  <li class="hassubs">
+                    <a href="<?= base_url('user') ?>">My Profile</a>
+                    <ul>
+                      <li><a href="<?= base_url('user') ?>">My Profile</a></li>
+                      <li><a href="<?= base_url('auth/logout') ?>">Logout</a></li>
+                    </ul>
+                  </li>
+                  <?php } else { ?>
+                  <li>
+                    <a href="<?= base_url('auth') ?>">Login</a>
+                    <!-- <ul>
+                      <li><a href="<?= base_url('user') ?>">My Profile</a></li>
+                      <li><a href="<?= base_url('auth/logout') ?>">Logout</a></li>
+                    </ul> -->
+                  </li>
+                  <?php } ?>
                 </ul>
               </nav>
               <div class="header_extra ml-auto">
@@ -88,9 +105,9 @@
         <div class="row">
           <div class="col">
             <div class="search_panel_content d-flex flex-row align-items-center justify-content-end">
-              <form action="#" method="post">
-                <input type="text" class="search_input" placeholder="Search" required="required" name="keyword" id="keyword"><!-- 
-                <button class="btn btn-primary" type="submit" id="cariDataProduk">Search</button> -->
+              <form action="<?= base_url('Kategori/') ?>" method="post">
+                <input type="text" class="search_input" placeholder="Search" required="required" name="keyword" id="keyword">
+                <button class="btn btn-primary" type="submit">Search</button>
               </form>
             </div>
           </div>
@@ -102,7 +119,7 @@
 
   <!-- Menu -->
 
-  <!-- <div class="menu menu_mm trans_300">
+  <div class="menu menu_mm trans_300">
     <div class="menu_container menu_mm">
       <div class="page_menu_content">
               
@@ -112,31 +129,46 @@
           </form>
         </div>
         <ul class="page_menu_nav menu_mm">
-          <li class="page_menu_item has-children menu_mm">
-            <a href="">Home<i class="fa fa-angle-down"></i></a>
-            <ul class="page_menu_selection menu_mm">
-              <li class="page_menu_item menu_mm"><a href="product.php">Product<i class="fa fa-angle-down"></i></a></li>
-              <li class="page_menu_item menu_mm"><a href="cart.php">Cart<i class="fa fa-angle-down"></i></a></li>
-              <li class="page_menu_item menu_mm"><a href="checkout.php">Checkout<i class="fa fa-angle-down"></i></a></li>
-              <li class="page_menu_item menu_mm"><a href="contact.php">Contact<i class="fa fa-angle-down"></i></a></li>
-            </ul>
+          <li class="page_menu_item menu_mm">
+            <a href="<?= base_url() ?>toko">Home</a>
           </li>
           <li class="page_menu_item has-children menu_mm">
-            <a href="categories.php">Categories<i class="fa fa-angle-down"></i></a>
+            <a href="#">Categories<i class="fa fa-angle-down"></i></a>
             <ul class="page_menu_selection menu_mm">
-              <li class="page_menu_item menu_mm"><a href="categories.php">Busur<i class="fa fa-angle-down"></i></a></li>
-              <li class="page_menu_item menu_mm"><a href="categories.php">Panah<i class="fa fa-angle-down"></i></a></li>
+              <li class="page_menu_item menu_mm"><a href="<?= base_url('Kategori/busur') ?>">Busur<i class="fa fa-angle-down"></i></a></li>
+              <li class="page_menu_item menu_mm"><a href="<?= base_url('Kategori/panah') ?>">Panah<i class="fa fa-angle-down"></i></a></li>
+              <li class="page_menu_item menu_mm"><a href="<?= base_url('Kategori/asesoris') ?>">Accessories<i class="fa fa-angle-down"></i></a></li>
             </ul>
           </li>
-          <li class="page_menu_item menu_mm"><a href="index.php">Accessories<i class="fa fa-angle-down"></i></a></li>
-          <li class="page_menu_item menu_mm"><a href="contact.php">Contact<i class="fa fa-angle-down"></i></a></li>
+          <li class="page_menu_item menu_mm"><a href="<?= base_url('contact') ?>">Contact<i class="fa fa-angle-down"></i></a></li>
+          <?php if($this->session->userdata('role_id')  == 2) { ?>
+          <li class="page_menu_item has-children menu_mm">
+            <a href="<?= base_url('user') ?>">My Profile<i class="fa fa-angle-down"></i></a>
+            <ul class="page_menu_selection menu_mm">
+              <li class="page_menu_item menu_mm"><a href="<?= base_url('user') ?>">My Profile<i class="fa fa-angle-down"></i></a></li>
+              <li class="page_menu_item menu_mm"><a href="<?= base_url('auth/logout') ?>">Logout<i class="fa fa-angle-down"></i></a></li>
+            </ul>
+          </li>
+          <?php }elseif ($this->session->userdata('role_id')  == 1) { ?>
+          <li class="page_menu_item has-children menu_mm">
+            <a href="<?= base_url('user') ?>">My Profile<i class="fa fa-angle-down"></i></a>
+            <ul class="page_menu_selection menu_mm">
+              <li class="page_menu_item menu_mm"><a href="<?= base_url('user') ?>">My Profile<i class="fa fa-angle-down"></i></a></li>
+              <li class="page_menu_item menu_mm"><a href="<?= base_url('auth/logout') ?>">Logout<i class="fa fa-angle-down"></i></a></li>
+            </ul>
+          </li>
+          <?php } else { ?>
+          <li class="page_menu_item menu_mm">
+            <a href="<?= base_url('auth') ?>">Login</a>
+          </li>
+          <?php } ?>
         </ul>
       </div>
     </div>
 
     <div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
 
-  </div> -->
+  </div>
 
 
 

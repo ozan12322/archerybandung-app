@@ -8,7 +8,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url() ?>home/">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
         <div class="sidebar-brand-icon">
           <i class="fab fa-strava"></i>
         </div>
@@ -66,7 +66,7 @@
       <li class="nav-item">
         <a class="nav-link" href="<?= base_url() ?>toko">
           <i class="fas fa-home"></i>
-          <span>One Archery Shop</span></a>
+          <span>Archery Bandung</span></a>
       </li>
 
       <!-- Divider -->

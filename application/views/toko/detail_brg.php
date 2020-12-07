@@ -1,6 +1,6 @@
 
 	<!-- Product Details -->
-
+<br><br>
 	<div class="product_details">
 		<div class="container">
 			<div class="row details_row">
@@ -8,9 +8,18 @@
 				<!-- Product Image -->
 				<div class="col-lg-6">
 					<div class="details_image">
-						<div class="details_image_large"><img src="<?= base_url().'/uploads/'.$brg->gambar ?>" alt=""></div>
+						<div class="details_image_large"><img src="<?= base_url().'/uploads/'.$brg->gambar ?>" alt=""><div class="product_extra product_sale"><a href="#">Hot</a></div>
+						</div>
+					<div class="details_image_thumbnails d-flex flex-row align-items-start justify-content-between">
+						<div class="details_image_thumbnail active" data-image="<?= base_url().'/uploads/'.$brg->gambar ?>"><img src="<?= base_url().'/uploads/'.$brg->gambar ?>" alt=""></div>
+						<div class="details_image_thumbnail" data-image="<?= base_url().'/uploads/'.$brg->detail1 ?>"><img src="<?= base_url().'/uploads/'.$brg->detail1 ?>" alt=""></div>
+						<div class="details_image_thumbnail" data-image="<?= base_url().'/uploads/'.$brg->detail2 ?>"><img src="<?= base_url().'/uploads/'.$brg->detail2 ?>" alt=""></div>
+						<div class="details_image_thumbnail" data-image="<?= base_url().'/uploads/'.$brg->detail3 ?>"><img src="<?= base_url().'/uploads/'.$brg->detail3 ?>" alt=""></div>
+					</div>
 					</div>
 				</div>
+
+				
 
 				<!-- Product Content -->
 				<div class="col-lg-6">
@@ -45,14 +54,14 @@
 						</div>
 
 						<!-- Share -->
-						<div class="details_share">
+						<!-- <div class="details_share">
 							<span>Share:</span>
 							<ul>
 								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>

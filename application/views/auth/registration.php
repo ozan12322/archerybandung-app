@@ -2,9 +2,9 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login150">
-				<a href="<?= base_url() ?>home">
+				<a href="<?= base_url() ?>toko">
 						<span class="login100-form-title p-b-10">
-							<img src="<?= base_url('assets'); ?>/images/logo/Kang.png" width=80>
+							<img src="#" width=80>
 						</span>
 					</a>
 					<span class="login100-form-title p-b-30 text-color">
@@ -43,7 +43,7 @@
 					<hr>
 					<div class="text-center p-t-1">
 						<h6>
-							<a class="txt2" href="<?= base_url('auth/'); ?>forget_password">
+							<a class="txt2" href="<?= base_url('auth/'); ?>forgetPassword">
 							Forgot Password?
 							</a>
 						</h6>

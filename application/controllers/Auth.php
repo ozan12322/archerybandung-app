@@ -99,7 +99,7 @@ class Auth extends CI_Controller {
 
             $this->_sendEmail($token, 'verify');
 
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Congratulation! your account has been created. Please activate your account</div>');
+            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Congratulation! your account has been created. Please check your spam email to activate your account.</div>');
             redirect('auth');
         }
     }
@@ -119,7 +119,7 @@ class Auth extends CI_Controller {
         $this->load->library('email', $config);
         $this->email->initialize($config);
 
-        $this->email->from('fauzanrizqi243@gmail.com', 'Admin One Archery');
+        $this->email->from('archerybandung@gmail.com', 'Admin Archery Bandung');
         $this->email->to($this->input->post('email'));
 
         if($type == 'verify'){

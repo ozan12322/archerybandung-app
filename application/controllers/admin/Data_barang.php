@@ -19,14 +19,17 @@ class Data_barang extends CI_Controller {
 		$this->load->view('templates_admin/footer_admin');
 	}
 	public function tambah_aksi(){
-			$data['user'] = $this->db->get_where('user', ['email' => 
-			$this->session->userdata('email')])->row_array();
+		$data['user'] = $this->db->get_where('user', ['email' => 
+		$this->session->userdata('email')])->row_array();
 		$nama_brg = $this->input->post('nama_brg');
 		$keterangan = $this->input->post('keterangan');
 		$kategori = $this->input->post('kategori');
 		$harga = $this->input->post('harga');
 		$stok = $this->input->post('stok');
 		$gambar = $_FILES['gambar']['name'];
+		$detail1 = $_FILES['gambar']['name'];
+		$detail2 = $_FILES['gambar']['name'];
+		$detail3 = $_FILES['gambar']['name'];
 		if($gambar = ''){
 
 		}else{ 
@@ -40,13 +43,55 @@ class Data_barang extends CI_Controller {
 				$gambar = $this->upload->data('file_name');
 			}
 		}
+		if($detail1 = ''){
+
+		}else{ 
+			$config ['upload_path'] = './uploads';
+			$config ['allowed_types'] = 'jpg|jpeg|png|gif';
+
+			$this->load->library('upload', $config);
+			if(!$this->upload->do_upload('detail1')){
+				echo "Detail 1 gagal di upload";
+			}else{
+				$detail1 = $this->upload->data('file_name');
+			}
+		}
+		if($detail2 = ''){
+
+		}else{ 
+			$config ['upload_path'] = './uploads';
+			$config ['allowed_types'] = 'jpg|jpeg|png|gif';
+
+			$this->load->library('upload', $config);
+			if(!$this->upload->do_upload('detail2')){
+				echo "Detail 2 gagal di upload";
+			}else{
+				$detail2 = $this->upload->data('file_name');
+			}
+		}
+		if($detail3 = ''){
+
+		}else{ 
+			$config ['upload_path'] = './uploads';
+			$config ['allowed_types'] = 'jpg|jpeg|png|gif';
+
+			$this->load->library('upload', $config);
+			if(!$this->upload->do_upload('detail3')){
+				echo "Detail 3 gagal di upload";
+			}else{
+				$detail3 = $this->upload->data('file_name');
+			}
+		}
 			$data = array(
 				'nama_brg' => $nama_brg,
 				'keterangan' => $keterangan,
 				'kategori' => $kategori,
 				'harga' => $harga,
 				'stok' => $stok,
-				'gambar' => $gambar
+				'gambar' => $gambar,
+				'detail1' => $detail1,
+				'detail2' => $detail2,
+				'detail3' => $detail3
 			);
 
 			$this->Model_barang->tambah_barang($data, 'tb_barang');

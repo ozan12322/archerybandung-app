@@ -2,6 +2,28 @@
 <html lang="en">
 <head>
 <title><?= $judul; ?></title>
+<style type="text/css">
+	.about
+	{
+		width: 100%;
+		background: #FFFFFF;
+		padding-top: 99px;
+		z-index: 2;
+	}
+
+    .testimonial
+	{
+		width: 100%;
+		background: #FFFFFF;
+		padding-top: 99px;
+		z-index: 2;
+	}
+    .testimonial img {
+                width: 290px;
+                height: 268px;
+                border: 3px solid #333;
+            }
+</style>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Sublime project">

@@ -7,7 +7,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-						<div class="footer_logo"><a href="#">One Archery Shop.</a></div>
+						<div class="footer_logo"><a href="#">Archery Bandung.</a></div>
 						<div class="copyright ml-auto mr-auto"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
@@ -27,6 +27,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </div>
 
 
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
 <script src="<?= base_url() ?>assets/js/jquery-3.2.1.min.js"></script>
 <script src="<?= base_url() ?>assets/styles/bootstrap4/popper.js"></script>
 <script src="<?= base_url() ?>assets/styles/bootstrap4/bootstrap.min.js"></script>
@@ -36,7 +38,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="<?= base_url() ?>assets/plugins/greensock/animation.gsap.min.js"></script>
 <script src="<?= base_url() ?>assets/plugins/greensock/ScrollToPlugin.min.js"></script>
 <script src="<?= base_url() ?>assets/plugins/easing/easing.js"></script>
-<script src="<?= base_url() ?>assets/https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
 <script src="<?= base_url() ?>assets/js/contact.js"></script>
 </body>
 </html>

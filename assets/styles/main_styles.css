@@ -1077,6 +1077,22 @@ section
 7. Products
 *********************************/
 
+.about
+{
+	width: 100%;
+	background: #FFFFFF;
+	padding-top: 99px;
+	z-index: 2;
+}
+
+.testimonial
+{
+	width: 100%;
+	background: #FFFFFF;
+	padding-top: 99px;
+	z-index: 2;
+}
+
 .products
 {
 	width: 100%;
